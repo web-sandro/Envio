@@ -18,7 +18,7 @@
 
   <script>
     // const socket = new WebSocket("ws://localhost:3000");
-    const socket = new WebSocket(location.origin.replace(/^http/, "ws"));
+    const socket = new WebSocket(location.origin.replace("https://envio-nife.onrender.com", "ws"));
 
 
     socket.onopen = () => console.log("✅ WebSocket conectado");
