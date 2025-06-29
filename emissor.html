@@ -17,8 +17,9 @@
   </form>
 
   <script>
-    // const socket = new WebSocket("https://recebe.onrender.com");
-    const socket = new WebSocket("ws://localhost:3000");
+    // const socket = new WebSocket("ws://localhost:3000");
+    const socket = new WebSocket(location.origin.replace(/^http/, "ws"));
+
 
     socket.onopen = () => console.log("✅ WebSocket conectado");
 
